@@ -1,0 +1,29 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "main": "HTTPS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server.js",
+    "dev": "nodemon Server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autodetect-decoder-stream": "^2.0.2",
+    "bootstrap": "^5.2.3",
+    "csv-reader": "^1.0.10",
+    "csv-write-stream": "^2.0.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielDiasMC/teste.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GabrielDiasMC/teste/issues"
+  },
+  "homepage": "https://github.com/GabrielDiasMC/teste#readme",
+  "description": ""
+}
