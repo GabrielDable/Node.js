@@ -45,7 +45,7 @@ The Http API Prorotype Chain
        Http.ClientRequest.on("response", ResponseHandler(Httt.Prorotype.OugoingMessage.Prototype.IncomingMessage);
 
 
-(B) METHODS and Events OF Stream.prototype.writable.https.prototype.IncomingMessage.
+(B) METHODS and Events OF Stream.prototype.readble.https.prototype.IncomingMessage.
 
        Methods
 
@@ -57,9 +57,73 @@ The Http API Prorotype Chain
       
       Events
 
-      
+      Close - // The message as completed
+      Aborted // Deprecated
 
-(c)
+      
+        
+(c) Methods and Events of Stream.prototype.writable.https.prortotype.outGoingMessage
+
+    Methods
+
+    OutgoingMessage.setHeadeR(name,value) // It sets one header value;
+    OutgoingMessage.writeHeader(StatusCode, {headerProperty : Value};
+    outgoingMessage.end(chunk[, encoding][, callback]) // Writes data to the Outgoignmessage and closes it afterwards. The returning value is THIS. 
+                    Chunk - String | Buffer | Unit8Array
+                    Encoding - Default UTF8
+                    Callback is Optional
+    outgoingMessage.write(chunk[, encoding][, callback])# // Similtar to the previous method, although it does not emit any event after flushing data into the outgoingMessage.
+    
+    
+    Events
+    
+    drain. When the buffer of the message is freee again
+    finish. When the transmission is finished sucessfully
+    
+    
+ (d) http.ServerResponse
+
+    All methods from the Prototype outgoigMessage
+    
+    
+    Proper Methods of the Http.prototypeServerResponse
+
+    response.req // A refence to the original request. This property does not exist in Http.Prototype.ClientRequest.
+
+(e) http.ClientRequest
+
+
+    All methods from the Prototype outgoigMessage
+
+/*    Remembering that the headers of this WritableStream are writtinen in the http.prototype.request signature.
+    Althouh it is possible to accesss any of the headers properties before closing the writable stream. */ 
+
+
+     ClientRequest.path
+     ClientRequest.host
+     ClientRequest.protocol
+
+    Events 
+    
+    Close - When the request finished.
+    Finish - ?
+    Response - The network returned a response within the process.
+    
+    
+    
+    
+  8f) http.server
+
+    Methods
+    
+    Server.Listen() 
+    Server.Close(Callback)
+
+
+
+        
+
+
 
 
 
